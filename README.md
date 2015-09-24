@@ -1,3 +1,7 @@
+---
+---
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
 Loadclip
 ========
 
@@ -6,9 +10,9 @@ a dictionary mapping shortcut names to more complicated text.  You run the
 command `loadclip [shortcut]`, and the text appears in your clipboard.
 
 The dictionary is stored in `~/.loadclip.json`.  I've included a copy of one
-that associates "shrug" with ¯\_(ツ)_/¯.  Very useful.
+that associates "shrug" with ¯\\\_(ツ)_/¯.  Very useful.
 
-If you have some text (like ¯\_(ツ)_/¯) that needs to be escaped in JSON, you
+If you have some text (like ¯\\\_(ツ)_/¯) that needs to be escaped in JSON, you
 should use `loadclip --new-key`.  Otherwise, I'd just edit the JSON file, since
 the `loadclip --new-key` script doesn't allow you to do multiline text (very
 useful for addresses and stuff).
