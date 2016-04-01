@@ -28,7 +28,7 @@ class Expander(collections.UserDict):
     def save(self):
         """Save any updated exansions."""
         with open(self._config, 'w') as f:
-            json.dump(self.data, f)
+            json.dump(self.data, f, indent=2, sort_keys=True)
 
     def copy(self, key):
         """Load clipboard with the given key."""
